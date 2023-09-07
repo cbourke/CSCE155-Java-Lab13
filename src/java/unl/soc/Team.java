@@ -60,7 +60,7 @@ public class Team {
 	
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(String.format("%-10s %4d %4d (%4.3f) %-15s %-5s $%12.2f $%9.2f", this.name, this.wins, this.loss, this.getWinPercentage(), this.city, this.state, this.payroll, this.averageSalary));
+		sb.append(String.format("%-15s %4d %4d (%4.3f) %-15s %-5s $%12.2f $%9.2f", this.name, this.wins, this.loss, this.getWinPercentage(), this.city, this.state, this.payroll, this.averageSalary));
 		return sb.toString();
 	}
 }

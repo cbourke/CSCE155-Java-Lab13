@@ -251,8 +251,8 @@ array that contains values of fields that you?re searching for.
 4.  Run the provided JUnit test suite to ensure your code is correct.
     Fix any errors before you submit.
 
-5.  Discuss with your partner: why were all the search results for
-    a California (CA) team different?
+5.  Discuss with your partner: why did the searches for a 
+    California (CA) team differ?
 
 ## 4. Handin/Grader Instructions
 

@@ -3,8 +3,8 @@ package unl.soc;
 import java.util.Comparator;
 
 /**
- * A Comparator class that orders {@link Team}s by team name, ascending
- * 
+ * A Comparator class that orders {@link Team}s by team name, in ascending
+ * order.  This has been implemented for you.
  */
 public class NameComparator implements Comparator<Team> {
 
