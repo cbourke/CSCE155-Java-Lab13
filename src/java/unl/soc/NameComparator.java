@@ -1,10 +1,10 @@
-package unl.cse.sorting;
+package unl.soc;
 
 import java.util.Comparator;
 
 /**
- * A Comparator class that orders Teams by team name, ascending
- * CSCE 155H
+ * A Comparator class that orders {@link Team}s by team name, ascending
+ * 
  */
 public class NameComparator implements Comparator<Team> {
 
@@ -13,4 +13,3 @@ public class NameComparator implements Comparator<Team> {
 		return o1.getName().compareTo(o2.getName());
 	}
 }
-

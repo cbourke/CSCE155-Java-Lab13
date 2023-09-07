@@ -1,10 +1,10 @@
-package unl.cse.sorting;
+package unl.soc;
 
 import java.util.Comparator;
 
 /**
- * A Comparator class that orders Teams by state, descending
- * CSCE 155H
+ * A Comparator class that orders {@link Team}s by state, descending
+ * 
  */
 public class StateComparator implements Comparator<Team> {
 

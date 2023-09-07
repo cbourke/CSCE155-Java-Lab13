@@ -1,4 +1,4 @@
-package unl.cse.sorting;
+package unl.soc;
 
 /**
  * Class that holds and computes data associated with Major League Baseball teams
@@ -6,13 +6,13 @@ package unl.cse.sorting;
  */
 public class Team {
 
-	private String name;
-	private Integer wins;
-	private Integer loss;
-	private String city;
-	private String state;
-	private Double payroll;
-	private Double averageSalary;
+	private final String name;
+	private final Integer wins;
+	private final Integer loss;
+	private final String city;
+	private final String state;
+	private final Double payroll;
+	private final Double averageSalary;
 	
 	public Team(String name, Integer wins, Integer loss, String city, String state, Double payroll, Double averageSalary) {
 		this.name = name;

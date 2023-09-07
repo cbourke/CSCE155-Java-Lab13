@@ -1,11 +1,11 @@
-package unl.cse.sorting;
+package unl.soc;
 
 import java.util.Comparator;
 
 /**
- * A comparator that orders Teams based on their total payroll, 
+ * A comparator that orders {@link Team}s based on their total payroll, 
  * descending
- * CSE 155H 
+ * 
  */
 public class PayrollDescendingComparator implements Comparator<Team> {
 

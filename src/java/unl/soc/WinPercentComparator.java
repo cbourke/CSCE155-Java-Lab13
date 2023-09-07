@@ -1,12 +1,12 @@
-package unl.cse.sorting;
+package unl.soc;
 
 import java.util.Comparator;
 
 /**
- * A Comparator class that orders Teams by win percentage, descending
- * CSCE 155H
+ * A Comparator class that orders {@link Team}s by win percentage in descending
+ * order.
  */
-public class WinPercentComparator implements Comparator<Team>{
+public class WinPercentComparator implements Comparator<Team> {
 
 	public int compare(Team firstTeam, Team secondTeam) {
 
@@ -15,4 +15,3 @@ public class WinPercentComparator implements Comparator<Team>{
 	}
 
 }
-
