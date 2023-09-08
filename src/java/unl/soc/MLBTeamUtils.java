@@ -15,7 +15,7 @@ public class MLBTeamUtils {
 
 	/**
 	 * Utility method to read team data from a file
-	 * 
+	 *
 	 * @param inputFileName
 	 * @return
 	 */
@@ -58,11 +58,11 @@ public class MLBTeamUtils {
 
 	/**
 	 * A static method that will print the teams in the given array
-	 * 
+	 *
 	 * @param teams
 	 */
 	public static void printAllTeams(List<Team> teams) {
-		System.out.println(String.format("%-10s %-4s %-4s %-6s  %-15s %-2s %13s %11s", "Name", "Wins", "Loss", "Perc",
+		System.out.println(String.format("%-15s %-4s %-4s %-6s  %-15s %-2s %13s %11s", "Name", "Wins", "Loss", "Perc",
 				"City", "State", "Payroll", "Average"));
 		for (Team t : teams) {
 			System.out.println(t);
@@ -71,7 +71,8 @@ public class MLBTeamUtils {
 	}
 
 	/**
-	 * Sorts the teamsData array using the selection sort algorithm.
+	 * Sorts <code>teams</code> by payroll in ascending order using a selection sort
+	 * algorithm.
 	 */
 	public static void selectionSortTeamsByPayroll(List<Team> teams) {
 
@@ -80,7 +81,7 @@ public class MLBTeamUtils {
 	}
 
 	/**
-	 * Sorts the teamsData array using rules specified by the given comparator
+	 * Sorts <code>teams</code> using rules specified by the given comparator
 	 */
 	public static void selectionSortTeams(List<Team> teams, Comparator<Team> comparator) {
 
@@ -91,7 +92,7 @@ public class MLBTeamUtils {
 	/**
 	 * Performs a linear search for a matching team based on the type of comparator
 	 * passed in.
-	 * 
+	 *
 	 * @param comp the Comparator type to base the search on.
 	 * @param key  the 'dummy' key used to compare for a match in the array.
 	 * @return integer the index of the matching team, or -1 for not found.
@@ -106,4 +107,56 @@ public class MLBTeamUtils {
 
 	}
 
+	// Comparators!
+
+	/**
+	 * A {@link Comparator} for {@link Team}s that orders by win percentage
+	 * (descending)
+	 */
+	public static final Comparator<Team> BY_WIN_PERC = new Comparator<Team>() {
+		@Override
+		public int compare(Team a, Team b) {
+			return (int) Math.signum(b.getWinPercentage() - a.getWinPercentage());
+		}
+	};
+
+	/**
+	 * A {@link Comparator} for {@link Team}s that orders by name (ascending)
+	 */
+	public static final Comparator<Team> BY_NAME = new Comparator<Team>() {
+		@Override
+		public int compare(Team a, Team b) {
+			return a.getName().compareTo(b.getName());
+		}
+	};
+
+	/**
+	 * A {@link Comparator} for {@link Team}s that orders by payroll (ascending)
+	 */
+	public static final Comparator<Team> BY_PAYROLL = new Comparator<Team>() {
+		@Override
+		public int compare(Team a, Team b) {
+			// TODO: implement this method
+			return 0;
+		}
+	};
+
+	/**
+	 * A {@link Comparator} for {@link Team}s that orders by payroll (descending)
+	 */
+	// TODO: implement this Comparator
+	public static final Comparator<Team> BY_PAYROLL_DESC = null;
+
+	/**
+	 * A {@link Comparator} for {@link Team}s that orders by state (descending)
+	 */
+	// TODO: implement this Comparator
+	public static final Comparator<Team> BY_STATE_DESC = null;
+
+	/**
+	 * A {@link Comparator} for {@link Team}s that orders by state (descending) then
+	 * by city (descending)
+	 */
+	// TODO: implement this Comparator
+	public static final Comparator<Team> BY_STATE_CITY_DESC = null;
 }

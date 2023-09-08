@@ -157,8 +157,8 @@ comparator classes for concrete examples.
 
 ### Instructions
 
-1.  Implement the `PayrollDescendingComparator` class. Only one
-    method, `compare()` needs to be coded.
+1.  Implement the `BY_PAYROLL_DESC` comparator in the `MLBTeamUtils`
+    class. Only one method, `compare()` needs to be coded.
 
 2.  Use the completed comparator classes provided with this lab an
     example on how to implement the `compare()` method
@@ -197,9 +197,9 @@ where
 1.  Examine the source files and observe how `Comparator` classes
     are defined and how the `Collections.sort` method is called
 
-2.  Implement two more comparators, `StateComparator` which sorts
-    based on team home state, and `StateCityComparator` which
-    sorts based first on state then by city
+2.  Implement two more comparators, `BY_STATE_DESC` which sorts
+    based on team home state (descending), and `BY_STATE_CITY_DESC` which
+    sorts based first on state then by city (both descending)
 
 3.  Use your method in the `main` method to re-sort the array and
     print out the results.
@@ -251,7 +251,7 @@ array that contains values of fields that you?re searching for.
 4.  Run the provided JUnit test suite to ensure your code is correct.
     Fix any errors before you submit.
 
-5.  Discuss with your partner: why did the searches for a 
+5.  Discuss with your partner: why did the searches for a
     California (CA) team differ?
 
 ## 4. Handin/Grader Instructions
@@ -260,9 +260,6 @@ array that contains values of fields that you?re searching for.
 
     - `RunMLBTeams.java`
     - `MLBTeamUtils.java`
-    - `StateComparator.java`
-    - `StateCityComparator.java`
-    - `PayrollDescendingComparator.java`
 
 2.  Even if you worked with a partner, you *both* should turn in all
     files.
