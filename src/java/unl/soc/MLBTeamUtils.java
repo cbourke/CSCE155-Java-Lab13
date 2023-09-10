@@ -49,7 +49,6 @@ public class MLBTeamUtils {
 				teams.add(t);
 
 			}
-			input.close();
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
