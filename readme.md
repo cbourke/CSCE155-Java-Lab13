@@ -113,7 +113,8 @@ team payroll (in dollars).
 2.  Implement the `selectionSortTeamsByPayroll` function in the
     `MLBTeamUtils.java` file as specified
 
-3.  Run your program
+3.  Run your program (not everything will work yet because you have
+    not yet implemented everything)
 
 ## Slightly Better Sorting
 
@@ -231,9 +232,7 @@ array that contains values of fields that you?re searching for.
 1.  Examine the `linearSearchMLB` method in the
     `MLBTeamUtils` class and understand how it works
 
-2.  Answer the questions in your worksheet regarding this code segments
-
-3.  Based on your observations add code to search the array for the team
+2.  Based on your observations add code to search the array for the team
     representing the Chicago Cubs:
 
     1.  Create a dummy `Team` key for the Cubs by instantiating a
@@ -248,10 +247,9 @@ array that contains values of fields that you?re searching for.
 
     4.  Print the team to the standard output
 
-4.  Run the provided JUnit test suite to ensure your code is correct.
+3.  Run the provided JUnit test suite to ensure your code is correct.
     Fix any errors before you submit.
-
-5.  Discuss with your partner: why did the searches for a
+4.  Discuss with your partner: why did the searches for a
     California (CA) team differ?
 
 ## 4. Handin/Grader Instructions
